@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Questions to reflect</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+	<!-- You can use Open Graph tags to customize link previews.
+	Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta property="og:url"           content="https://thinkaboutyourself.000webhostapp.com/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Know yourself better" />
+	<meta property="og:description"   content="{{question}}" />
+	<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
+ 	<style>
+	  	body {font-family: poppins, 'Open Sans', sans-serif;}
+		p    {font-size: 1.2em;}
+		form    {font-size: 1.2em; margin-top: 1.2em}
+	</style>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=300802041336679&autoLogAppEvents=1" nonce="0koepNAP"></script>
+	
+	<div class="container container-md">
+		<!-- Header Section START -->
+		<div class="row mb-3" style="margin: 2em 0 0;">
+			<div class="d-flex text-center">
+		    <div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-8 themed-grid-col">
+
+				<img src="images/catordog.png" alt="QnA icon" width="200">
+
+				<h1>Cat or Dog</h1>
+				<p>Everyone has an opinion about everything. There's nothing right or wrong about it. Those are just the opinions. It really doesn't matter whether you want dog or cat as your pet. <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Read more</a></p>
+<!-- 				<p>
+					<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Read more</a>
+  				</p>
+				<p>
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Read more</button>
+				</p> -->
+				<div class="collapse" id="collapseExample">
+					<!-- <div class="card card-body"> -->
+						<p>
+							But still most of us are very much attached with one species over other. Those who are have their own valid reasons to feel that way. And those who don't can't relate to those reasons. It's how the life is.
+						</p>
+						<p>
+							The following question, too, doesn't mean anything in itself. But giving a thought would help us understand our own reasonings which could be different than the world. So, are you a dog-type or cat-type? Go solve the question.
+						</p>
+					<!-- </div> -->
+				</div>
+
+		    </div>
+		    <div class="col-md-2 themed-grid-col"></div>
+
+
+			</div>
+		</div>
+		<!-- Header Section END -->
+
+		<!-- Question Section START -->
+		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
+		    <div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-8 themed-grid-col">
+		    	<h3><strong>Question</strong></h3>
+		    	<p>The question goes here.</p>
+		    	<p>Get three columns starting at desktops and scaling to large desktops of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+		    </div>
+		    <div class="col-md-2 themed-grid-col"></div>
+		</div>
+		<!-- Question Section END -->
+
+		<!-- Form Section START -->
+		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
+		    <div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-8 themed-grid-col">
+		    	<form>
+				    <label class="radio-inline">
+				      <input type="radio" name="optradio" value="I am in absolute agreement with this. " onclick="displayRadioValue(this)" checked>Absolutely Yes
+				    </label>
+				    <label class="radio-inline">
+				      <input type="radio" name="optradio" value="I don't have an opinion about it. " onclick="displayRadioValue(this)">Neutral
+				    </label>
+				    <label class="radio-inline">
+				      <input type="radio" name="optradio" value="My answer is definite no. " onclick="displayRadioValue(this)">Definitely Not
+				    </label>
+				    <label class="radio-inline">
+				      <input type="radio" name="optradio" value="I couldn't make up my mind about it. " onclick="displayRadioValue(this)">Can't Say
+				    </label>
+				    <script> 
+				        function displayRadioValue(obj) { 
+				                // document.getElementById("result").innerHTML
+				                //         = "Selected value: "+obj.value; 
+				                document.querySelector('meta[property="og:title"]').setAttribute("content", obj.value+" Testing the the chaning description");
+				                document.getElementById("whatsapp").innerHTML
+				                        = '<a href="https://wa.me/?text='+obj.value+' What\'s your opinion about it?" data-action="share/whatsapp/share"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a> &nbsp;' ;
+				                document.getElementById("twitter").innerHTML
+				                        = '<a href="http://twitter.com/share?url=https://thinkaboutyourself.000webhostapp.com/&text='+obj.value+' What\'s your opinion about it?" ><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button> &nbsp; </a> &nbsp;' ;
+				                // document.getElementById("whatsapp").innerHTML
+				                //         = "<a href='https://wa.me/?text="+obj.value+" What\'s your opinion about it?' data-action='share/whatsapp/share'><button class='btn btn-primary btn-social btn-whatsapp' type='button'>Share on <span class='fa fa-whatsapp'></span></button></a> &nbsp;" ;
+				                // document.getElementById("whatsapp").innerHTML = "<a href='https://wa.me/?text="+obj.value;+" What\'s your opinion about it?' data-action='share/whatsapp/share'><button class='btn btn-primary btn-social btn-whatsapp' type='button'>Share on <span class='fa fa-whatsapp'></span></button></a> &nbsp;" ;
+				        } 
+				    </script> 
+				</form>
+		    </div>
+		    <div class="col-md-2 themed-grid-col"></div>
+		</div>
+		<!-- Form Section END -->
+
+		<!-- Social Submit START -->
+		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
+		    <div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-8 themed-grid-col">
+<!-- 			    <div>
+			    	<div class="fb-share-button" data-href="https://thinkaboutyourself.000webhostapp.com/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thinkaboutyourself.000webhostapp.com/&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+			    	<button class="btn btn-primary btn-social btn-twitter" type="button"><span class="fa fa-twitter"></span> Share on Twitter</button> <button class="btn btn-primary btn-social btn-whatsapp" type="button"><span class="fa fa-whatsapp"></span> Share on Whatsapp</button> <button class="btn btn-primary btn-social btn-facebook" type="button"><span class="fa fa-facebook"></span> Share on Facebook</button>
+			    </div> -->
+			    <div>
+			    	
+<!-- 			    	<a href="https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing" data-action="share/whatsapp/share"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a> &nbsp; -->
+
+			    	<span id="whatsapp"><a href="https://wa.me/?text=I've have not yet chosen the option. " data-action="share/whatsapp/share"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a> &nbsp;</span>
+
+
+			    	<button class="btn btn-primary btn-social btn-facebook" type="button">Share on <span class="fa fa-facebook"></span></button> &nbsp; 
+
+			    	<span id="twitter">
+			    		<a href="http://twitter.com/share?url=https://thinkaboutyourself.000webhostapp.com/&text=I've have not yet chosen the option. "><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button> &nbsp; </a>
+			    	</span>
+
+			    	<button class="btn btn-primary btn-social btn-linkedin" type="button">Share on <span class="fa fa-linkedin"></span></button>  
+		    	</div>
+		    </div>
+		    <div class="col-md-2 themed-grid-col"></div>
+		</div>
+		<!-- Social Submit END -->	
+
+		<!-- Pagination START -->
+		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
+			<div class="col-md-2 themed-grid-col">
+		    </div>
+		    <div class="col-md-8 themed-grid-col">
+		    	<div style="float: left;">
+			    		<ul class="pagination">
+			    			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			    		</ul>
+			    </div>
+			    <div style="float: right;">
+			    		<ul class="pagination">
+			    			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+			    		</ul>
+				</div>
+		    </div>
+			<div class="col-md-2 themed-grid-col">
+		    </div>
+		</div>
+		<!-- Pagination END -->	
+
+	</div>
+
+
+</body>
+
+</html>
