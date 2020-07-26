@@ -64,26 +64,26 @@
 		    <div class="col-md-8 themed-grid-col">
 		    	<form>
 				    <label class="radio-inline">
-				      <input type="radio" name="optradio" value="I will definitely do it. What about you? Try this question" onclick="displayRadioValue(this)" checked>Yes, I will
+				      <input type="radio" name="optradio" value="I will definitely do it. What about you? Try this question." onclick="displayRadioValue(this)" checked>Yes, I will
 				    </label>
 				    <label class="radio-inline">
 				      <input type="radio" name="optradio" value="I am not able to make up the mind. Do you want to try this question?" onclick="displayRadioValue(this)">Can't Say
 				    </label>
 				    <label class="radio-inline">
-				      <input type="radio" name="optradio" value="I will definitely not do it. What about you? Try this question" onclick="displayRadioValue(this)">No, I will not
+				      <input type="radio" name="optradio" value="I will definitely not do it. What about you? Try this question." onclick="displayRadioValue(this)">No, I will not
 				    </label>
 				    <script> 
 				        function displayRadioValue(obj) { 
 
 				                document.querySelector('meta[property="og:title"]').setAttribute("content", obj.value+" Testing the the chaning description");
 				                document.getElementById("whatsapp").innerHTML
-				                        = '<a href="https://wa.me/?text='+obj.value+' " data-action="share/whatsapp/share" target="_blank"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a>' ;
+				                        = '<a href="https://wa.me/?text='+obj.value+' Check out - http://www.enjoywithcoffee.com/question.html" data-action="share/whatsapp/share" target="_blank"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a>' ;
 				                document.getElementById("facebook").innerHTML
-				                        = '<a href="http://www.facebook.com/sharer.php?u=http://www.enjoywithcoffee.com&p[title]'+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-facebook" type="button">Share on <span class="fa fa-facebook"></span></button></a>' ;
+				                        = '<a href="http://www.facebook.com/sharer.php?u=http://www.enjoywithcoffee.com/question.html&p[title]'+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-facebook" type="button">Share on <span class="fa fa-facebook"></span></button></a>' ;
 				                document.getElementById("twitter").innerHTML
-				                        = '<a href="http://twitter.com/share?url=http://www.enjoywithcoffee.com/&text='+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button></a>' ;
+				                        = '<a href="http://twitter.com/share?url=http://www.enjoywithcoffee.com/question.html&text='+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button></a>' ;
 				                document.getElementById("linkedin").innerHTML
-				                        = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.enjoywithcoffee.com&title='+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-linkedin" type="button">Share on <span class="fa fa-linkedin"></span></button></a>' ;
+				                        = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.enjoywithcoffee.com/question.html&title='+obj.value+' " target="_blank"><button class="btn btn-primary btn-social btn-linkedin" type="button">Share on <span class="fa fa-linkedin"></span></button></a>' ;
 				        } 
 				    </script> 
 				</form>
@@ -92,38 +92,38 @@
 		</div>
 		<!-- Form Section END -->
 
+
 		<!-- Social Submit START -->
 		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
-		    <div class="col-md-2 themed-grid-col"></div>
-		    <div class="col-md-8 themed-grid-col">
-			    <div>
-
-			    	<span id="whatsapp">
-			    		<a href="https://wa.me/?text=I've have not yet chosen the option. But you can try this question. " data-action="share/whatsapp/share" target="_blank"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a>
+			<div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-2 themed-grid-col" style="margin-top: 1em;">
+		    	<span id="whatsapp">
+			    		<a href="https://wa.me/?text=I've have not yet chosen the option. But you can try this question. Check out http://www.enjoywithcoffee.com/question.html " data-action="share/whatsapp/share" target="_blank"><button class="btn btn-primary btn-social btn-whatsapp" type="button">Share on <span class="fa fa-whatsapp"></span></button></a>
+			    </span>
+		    </div>
+		    <div class="col-md-2 themed-grid-col" style="margin-top: 1em;">
+		    	<span id="facebook">
+			    		<a href="http://www.facebook.com/sharer.php?u=http://www.enjoywithcoffee.com/question.html&p[title]Hey, this is a very interesting site" target="_blank"><button class="btn btn-primary btn-social btn-facebook" type="button">Share on <span class="fa fa-facebook"></span></button></a>
+			    </span>
+			</div>
+		    <div class="col-md-2 themed-grid-col" style="margin-top: 1em;">
+		    	<span id="twitter">
+			    		<a href="http://twitter.com/share?url=http://www.enjoywithcoffee.com/question.html&text=I've have not yet chosen the option. But you can try this question. " target="_blank"><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button></a>
+			    </span>
+		    </div>
+		    <div class="col-md-2 themed-grid-col" style="margin-top: 1em;">
+		    	<span id="linkedin">
+			    		<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.enjoywithcoffee.com/question.html&title=I've have not yet chosen the option. But you can try this question. " target="_blank"><button class="btn btn-primary btn-social btn-linkedin" type="button">Share on <span class="fa fa-linkedin"></span></button></a>
 			    	</span>
-
-
-			    	<span id="facebook">
-			    		<a href="http://www.facebook.com/sharer.php?u=http://www.enjoywithcoffee.com&p[title]Hey, this is a very interesting site" target="_blank"><button class="btn btn-primary btn-social btn-facebook" type="button">Share on <span class="fa fa-facebook"></span></button></a>
-			    	</span>
-
-			    	<span id="twitter">
-			    		<a href="http://twitter.com/share?url=http://www.enjoywithcoffee.com/&text=I've have not yet chosen the option. But you can try this question. " target="_blank"><button class="btn btn-primary btn-social btn-twitter" type="button">Share on <span class="fa fa-twitter"></span></button></a>
-			    	</span>
-
-			    	<span id="linkedin">
-			    		<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.enjoywithcoffee.com&title=I've have not yet chosen the option. But you can try this question. " target="_blank"><button class="btn btn-primary btn-social btn-linkedin" type="button">Share on <span class="fa fa-linkedin"></span></button></a>
-			    	</span>
-
-			    	<p>&nbsp;</p>
-
-				<hr />
-			    	
-		    	</div>
 		    </div>
 		    <div class="col-md-2 themed-grid-col"></div>
+
+		    <p>&nbsp;</p>
+
+
 		</div>
 		<!-- Social Submit END -->	
+
 
 		<!-- Pagination START -->
 <!-- 		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
@@ -150,13 +150,16 @@
 
 		<!-- Subscribe START -->
 		<div class="row mb-3 text-center" style="margin: 2em 0 0;">
-		    <div class="col-md-2 themed-grid-col"></div>
-		    <div class="col-md-8 themed-grid-col">
+			
+		    <div class="col-md-3 themed-grid-col"></div>
+		    <div class="col-md-6 themed-grid-col">
 <!-- 			    <div>
 			    	<div class="fb-share-button" data-href="https://thinkaboutyourself.000webhostapp.com/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thinkaboutyourself.000webhostapp.com/&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			    	<button class="btn btn-primary btn-social btn-twitter" type="button"><span class="fa fa-twitter"></span> Share on Twitter</button> <button class="btn btn-primary btn-social btn-whatsapp" type="button"><span class="fa fa-whatsapp"></span> Share on Whatsapp</button> <button class="btn btn-primary btn-social btn-facebook" type="button"><span class="fa fa-facebook"></span> Share on Facebook</button>
 			    </div> -->
-			    <div>
+			    <hr />
+		    	<p>&nbsp;</p>
+		    	<div>
 			    	<h2>Subscribe to ECW</h2>
 			    	<p>&nbsp;</p>
 			    	<form method="post" action="https://sendfox.com/form/3q29o6/1x0ywz" class="sendfox-form" id="1x0ywz" data-async="true">
@@ -186,7 +189,7 @@
 								
 		    	</div>
 		    </div>
-		    <div class="col-md-2 themed-grid-col"></div>
+		    <div class="col-md-3 themed-grid-col"></div>
 		</div>
 		<!-- Subscribe END -->	
 
